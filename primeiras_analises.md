@@ -1,6 +1,6 @@
 # Primeiras análises — evasão escolar (SAEB 2023)
 
-**Pergunta:** o que os alunos que abandonam a escola têm em comum?
+**Pergunta:** Quais os principais pontos em comum entre os alunos que evadem a escola?
 
 ## Coleta
 - O notebook `coleta.ipynb` baixa os microdados do SAEB 2023 do site do INEP e coloca as tabelas na pasta `tabelas_csv`.
@@ -11,12 +11,8 @@
 - São dados oficiais e nacionais, com milhões de alunos. A rede pública é avaliada inteira; a privada, só por amostra.
 - O questionário do aluno tem uma pergunta direta sobre abandono (Q20) e várias sobre possíveis causas (reprovação, idade, trabalho, família, nível socioeconômico).
 - No 9º ano, cerca de 20% deixaram a Q20 em branco. Ainda assim sobram quase 2 milhões de respostas válidas.
-- Também faltam o nível socioeconômico de ~20% dos alunos e a nota de ~17%.
-- A tabela de escolas só tem escolas públicas, então os alunos de escola privada não se ligam a ela.
-- Limitação importante: só responde quem ainda está na escola. A Q20 mostra quem já abandonou e voltou, não quem saiu de vez.
 
 ## Conclusões e aprendizados até agora
 - Os dados servem para o nosso tema, desde que a Q20 seja tratada como "risco de evasão".
 - No 9º ano, cerca de 6% dos alunos que responderam dizem que já abandonaram a escola alguma vez.
-- Ler o dicionário do INEP foi essencial para entender os códigos (A, B, C, `.` e `*`).
-- Pela quantidade de dados, faz diferença carregar só as colunas necessárias.
+- Pela quantidade de registros e de colunas ser muito elevada, é muito importante que a gente realize um filtro das informações de maneira que não acabe manipulando os dados de maneira que não gere dados equivocados.
