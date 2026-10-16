@@ -3,7 +3,7 @@
 **Pergunta:** o que os alunos que abandonam a escola têm em comum?
 
 ## Coleta
-- Baixamos os microdados do SAEB 2023 no site do INEP e colocamos as tabelas na pasta `tabelas_csv`.
+- O notebook `coleta.ipynb` baixa os microdados do SAEB 2023 do site do INEP e coloca as tabelas na pasta `tabelas_csv`.
 - São 9 tabelas em CSV, com uns 3 GB no total. Os arquivos de alunos passam de 1 GB cada, então lemos só as colunas que interessam.
 - Os arquivos vêm separados por `;` e com acentuação em latin1. É preciso informar isso no `read_csv`.
 
