@@ -1,5 +1,4 @@
 /tabelas_csv
-/pandas/tabelas
 *.zip
 *.DS_STORE
 .venv/
