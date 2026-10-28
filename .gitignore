@@ -3,3 +3,4 @@
 *.DS_STORE
 .venv/
 *.csv
+!resultados_seguranca/*.csv
