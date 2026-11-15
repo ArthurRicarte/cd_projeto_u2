@@ -32,6 +32,22 @@ Usamos as tabelas de **alunos** (5º ano, 9º ano e 3ª série do EM), de **dire
 | TX_RESP_Q23e | "Eu me sinto à vontade para discordar dos meus professores" | A a D |
 | TX_RESP_Q23h | "Meus professores acreditam que eu sou capaz de aprender" | A a D |
 
+Outras variáveis usadas só no 9º ano (análise descritiva):
+
+| Variável | Descrição | Valores |
+|---|---|---|
+| ID_REGIAO | região | 1 = Norte, 2 = Nordeste, 3 = Sudeste, 4 = Sul, 5 = Centro-Oeste |
+| ID_AREA | capital ou interior | 1 = capital, 2 = interior |
+| TX_RESP_Q14 | tempo para chegar à escola | A = menos de 30 min, B = 30 min a 1 hora, C = mais de 1 hora |
+| TX_RESP_Q16 | como chega à escola | A = a pé, B = bicicleta, C = van, D = ônibus, E = metrô/trem, F = carro, G = barco, H = moto, I = outro |
+| TX_RESP_Q19 | já foi reprovado | A = não, B = uma vez, C = duas ou mais |
+| TX_RESP_Q20 | já abandonou a escola | A = nunca, B = uma vez, C = duas ou mais |
+| TX_RESP_Q24 | o que pretende depois do fundamental | A = só estudar, B = só trabalhar, C = estudar e trabalhar, D = não sabe |
+| TX_RESP_Q22a–h | quantos professores: contam o que será ensinado (a), perguntam o que já sabemos (b), trazem temas do cotidiano (c), desigualdade racial (d), de gênero (e), bullying (f), trabalhos em grupo (g), futuro profissional (h) | A = todos, B = a maior parte, C = poucos, D = nenhum |
+| TX_RESP_Q23a–i | concorda que: se interessa pelo que foi ensinado (a), se sente motivado a usar (b), há espaço para opiniões (c), à vontade para discordar (e), consegue argumentar (f), as avaliações mostram o que aprendeu (g), professores acreditam nele (h), professores motivam a continuar estudando (i) | A = concordo totalmente ... D = discordo totalmente |
+
+Da tabela **TS_ESCOLA** usamos `NU_MATRICULADOS_CENSO_9EF` (matriculados no 9º ano) para o tamanho da escola.
+
 O **resultado** da análise é a Q23d: o aluno que responde C ou D é contado como "não se sente seguro".
 
 ## Diretores (TS_DIRETOR)
@@ -58,3 +74,17 @@ A mesma escola aparece em uma linha para cada série avaliada (com as mesmas res
 | TX_Q135 a TX_Q147 | frequência, nesta escola e neste ano, de: atentado à vida (135), lesão corporal (136), roubo ou furto (137), tráfico (138), álcool (139), drogas (140), porte de arma (141), assédio sexual (142), discriminação (143), bullying (144), invasão (145), vandalismo (146), tiroteio ou bala perdida (147) | A = nunca, B = poucas vezes, C = muitas vezes, D = sempre |
 
 Nas respostas dos questionários, `.` significa em branco e `*` significa resposta nula.
+
+## PeNSE 2024 (IBGE) — dados externos para validar
+
+Tabelas prontas do tema Segurança (`Tema_09_Seguranca`), https://ftp.ibge.gov.br/pense/2024/xlsx/. Cada linha é um local (Brasil, região, estado ou capital), com o percentual de escolares de 13 a 17 anos, total e por rede (pública/privada).
+
+| Tabela | Indicador |
+|---|---|
+| 9.7 | deixou de ir à escola por falta de segurança no caminho (últimos 30 dias) |
+| 9.8 | deixou de ir à escola por falta de segurança na escola (últimos 30 dias) |
+| 9.9 | envolveu-se em briga com luta física (últimos 30 dias) |
+| 9.10 | envolveu-se em briga em que alguém usou arma de fogo (últimos 30 dias) |
+| 9.17 | foi agredido fisicamente por alguém fora da família (últimos 12 meses) |
+
+Ligamos ao SAEB pelo nome do estado (convertido para a sigla) e comparamos também rede, faixa de idade e região.

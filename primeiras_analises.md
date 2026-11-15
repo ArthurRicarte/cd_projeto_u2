@@ -18,11 +18,13 @@ Na nova pergunta o resultado está medido diretamente nos dados: o próprio alun
 - A pergunta de segurança (Q23d) tem cerca de 2 milhões de respostas válidas no 9º ano. Cerca de 20% dos alunos deixaram em branco.
 - Os questionários dos diretores (62 mil escolas) e dos professores (292 mil responderam as perguntas de violência) se ligam aos alunos pelo código da escola. Das escolas com pelo menos 10 alunos do 9º ano respondendo, 85% têm o questionário do diretor e 83% têm professores do 9º ano com resposta.
 - Cuidado encontrado: na tabela de diretores a mesma escola aparece uma vez por série avaliada. Sem tirar as repetições, as escolas com mais séries contariam em dobro.
-- O código da escola é mascarado, então não dá para cruzar com outros dados (Censo Escolar, ocorrências policiais).
+- O código da escola e o do município são mascarados, então não dá para ligar escola a escola com outros dados. Para validar, usamos a **PeNSE 2024 (IBGE)**, comparando por rede, idade, região e estado. O notebook baixa as tabelas do site do IBGE (~1 MB) para `dados_externos/`.
 
 ## Conclusões e aprendizados até agora
 - Cerca de **3 em cada 10** alunos do 9º ano não se sentem seguros na escola (2 em cada 10 no 5º ano).
 - Onde diretores e professores relatam mais violência, mais alunos se sentem inseguros, mesmo comparando escolas do mesmo estado, rede e localização.
 - Muros, polícia e projetos contra violência quase não aparecem ligados à sensação de segurança. O que mais acompanha é a relação com os professores.
+- Na análise descritiva do alvo, as perguntas sobre a sala de aula separam alunos seguros e inseguros muito mais do que região, rede ou trajetória. Escolas grandes, alunos que já abandonaram a escola e os que pretendem só trabalhar se sentem menos seguros.
+- A PeNSE 2024 confirma os padrões gerais (mais insegurança na rede pública, entre os mais novos e onde há mais violência), mas não a ordem exata dos estados.
 - "Me sinto seguro" e as perguntas sobre os professores são respondidas pelo mesmo aluno, então mostram associação, não causa.
 - Resultados completos em `seguranca_escola.md`.

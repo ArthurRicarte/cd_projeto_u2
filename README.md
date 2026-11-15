@@ -1,7 +1,7 @@
 # cd_projeto_u2
 Repositório para o trabalho do Projeto U2 da matéria de Ciência de Dados no BTI - IMD - UFRN
 
-Tema: Segurança na escola, com os microdados do SAEB 2023 (INEP).
+Tema: Segurança na escola, com os microdados do SAEB 2023 (INEP) e, para validar, a PeNSE 2024 (IBGE).
 
 **Pergunta:** os alunos se sentem seguros na escola? O que está ligado a isso?
 
@@ -14,13 +14,13 @@ Também dá para abrir o `coleta.ipynb` no Google Colab.
 
 Na primeira vez, o notebook baixa os microdados do SAEB 2023 do site do INEP (~700 MB) e coloca as tabelas .csv na pasta `tabelas_csv/`. Depois disso, ele só lê as tabelas que já estão lá.
 
-Depois de rodar o `coleta.ipynb`, rode o `seguranca_escola.ipynb` para gerar as figuras e tabelas da análise.
+Depois de rodar o `coleta.ipynb`, rode o `seguranca_escola.ipynb` para gerar as figuras e tabelas da análise. Ele também baixa as tabelas de segurança da PeNSE 2024 do IBGE (~1 MB) para `dados_externos/`.
 
 Link dos dados: https://download.inep.gov.br/microdados/microdados_saeb_2023.zip
 
 ## Arquivos
 - `coleta.ipynb`: baixa os dados e dá uma primeira olhada nas tabelas que usamos (alunos do 9º ano, diretores e professores): respostas em branco, a pergunta de segurança e quantas escolas dá para ligar entre as tabelas
-- `seguranca_escola.ipynb`: os alunos se sentem seguros na escola? Cruza a resposta dos alunos com a violência relatada por diretores e professores (SAEB 2023). Rodar depois do `coleta.ipynb`.
+- `seguranca_escola.ipynb`: os alunos se sentem seguros na escola? Descreve a resposta dos alunos em relação às demais variáveis, cruza com a violência relatada por diretores e professores (SAEB 2023) e valida com a PeNSE 2024 (IBGE). Rodar depois do `coleta.ipynb`.
 - `seguranca_escola.md`: resultados dessa análise (figuras e tabelas em `resultados_seguranca/`)
 - `dicionario_de_dados.md`: tabelas e variáveis usadas
 - `primeiras_analises.md`: viabilidade, qualidade e primeiras conclusões

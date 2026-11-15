@@ -1,0 +1,39 @@
+variável,resposta,alunos,% não se sente seguro
+Região,Norte,229477,29.7
+Região,Nordeste,582373,27.1
+Região,Sudeste,753061,30.1
+Região,Sul,272829,26.8
+Região,Centro-Oeste,166387,29.7
+Rede,pública,1969772,30.8
+Rede,privada,34355,17.8
+Localização,urbana,1789381,29.2
+Localização,rural,214746,23.8
+Capital ou interior,capital,377038,30.7
+Capital ou interior,interior,1627089,28.2
+Tamanho (matriculados no 9º ano),até 30,199076,23.0
+Tamanho (matriculados no 9º ano),31 a 60,361570,28.0
+Tamanho (matriculados no 9º ano),61 a 120,771365,31.3
+Tamanho (matriculados no 9º ano),121 a 240,563317,34.1
+Tamanho (matriculados no 9º ano),mais de 240,74323,36.0
+Tempo até a escola,menos de 30 min,1429551,27.8
+Tempo até a escola,30 min a 1 hora,367526,31.7
+Tempo até a escola,mais de 1 hora,77268,33.7
+Como chega à escola,a pé,958973,31.5
+Como chega à escola,bicicleta,129558,28.2
+Como chega à escola,van/kombi,71492,23.4
+Como chega à escola,ônibus,429780,28.6
+Como chega à escola,metrô/trem,2687,33.6
+Como chega à escola,carro,208459,22.7
+Como chega à escola,barco,12247,29.1
+Como chega à escola,moto,73434,26.8
+Como chega à escola,outro,19185,33.1
+Já foi reprovado,não,1545193,28.1
+Já foi reprovado,"sim, uma vez",290998,31.5
+Já foi reprovado,"sim, duas ou mais",88866,32.1
+Já abandonou a escola,nunca,1814827,28.2
+Já abandonou a escola,"sim, uma vez",91063,37.3
+Já abandonou a escola,"sim, duas ou mais",18051,40.5
+Depois do fundamental pretende,só estudar,282175,21.1
+Depois do fundamental pretende,só trabalhar,153723,35.6
+Depois do fundamental pretende,estudar e trabalhar,1167577,29.0
+Depois do fundamental pretende,ainda não sei,285563,32.1
